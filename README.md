@@ -7,7 +7,7 @@ custom compile. LowRes-NX for GameShell without resolution problem.(300 * 240).
 git clone https://github.com/zzxzzk115/lowres-nx-GameShell.git
 cd lowres-nx-GameShell
 sudo cp platform/LowRes\ NX\ GameShell/output/LowResNX ~/apps/emulators/
-sudo cp 55_LowResNX ~/apps/Menu/
+sudo cp 55_LowResNX ~/apps/Menu/55_LowResNX
 ```
 
 Put games in `~/games/LowResNX/`.
