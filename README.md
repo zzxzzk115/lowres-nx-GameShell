@@ -1,18 +1,36 @@
 # lowres-nx-GameShell
-custom compile. LowRes-NX for GameShell without resolution problem.
+custom compile. LowRes-NX for GameShell without resolution problem.(300 * 240).
 
 **Just use**:
 
 ```bash
 git clone https://github.com/zzxzzk115/lowres-nx-GameShell.git
-sudo cp lowres-nx-GameShell/platform/LowRes\ NX\ GameShell/output/LowResNX ~/apps/emulators/
+cd lowres-nx-GameShell
+sudo cp platform/LowRes\ NX\ GameShell/output/LowResNX ~/apps/emulators/
+sudo cp 55_LowResNX ~/apps/Menu/
 ```
 
-**Compile**:
+Put games in `~/games/LowResNX/`.
+
+**If you wanna compile :**
+
+First of all:
 
 ```bash
 git clone https://github.com/zzxzzk115/lowres-nx-GameShell.git
-sudo cp lowres-nx-GameShell/platform/LowRes\ NX\ GameShell/
+cd lowres-nx-GameShell
+```
+
+You can edit `sdl/main.c` for custom compile:
+
+```bash
+sudo nano sdl/main.c
+```
+
+Then:
+
+```bash
+cd platform/LowRes\ NX\ GameShell/
 make -j6
 ```
 
